@@ -20,7 +20,6 @@ main = do
   _ <-
     case optCommand opts of
       Add dep -> addDependency dep
-  putStrLn ("Running command " ++ show (optCommand opts))
 
 showHelpOnErrorExecParser :: ParserInfo a -> IO a
 showHelpOnErrorExecParser = customExecParser (prefs showHelpOnError)
